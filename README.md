@@ -1,4 +1,16 @@
-# Grafana RRD Server
+# Grafana RRD Server for Observium
+
+A fork from https://github.com/doublemarket/grafana-rrd-server wich is made for use with Observium
+
+Simply give it the path to observium rrds and add it to grafana the query to do is like this : "<hostname>/<rrd>"
+Example:
+`localhost/uptime`
+will give
+[![Uptime](https://cloud.landryjuge.com/fichiers/2020/07/5f0388abdaed9.png)]
+
+You can list rrds for a specific host with ls <grafana_path>/rrd/<hostname>
+The commons are :
+[![Commons](https://cloud.landryjuge.com/fichiers/2020/07/5f038948d45ce.png)]
 
 A simple HTTP server that reads RRD files and responds to requests from Grafana with [Grafana Simple JSON Datasource plugin](https://grafana.net/plugins/grafana-simple-json-datasource).
 
